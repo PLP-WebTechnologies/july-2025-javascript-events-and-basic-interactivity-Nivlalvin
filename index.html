@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Web Page with JavaScript</h1>
+  </header>
+
+  <!-- Part 1: Event Handling Examples -->
+  <section>
+    <h2>Part 1: Event Handling</h2>
+    <button id="alertBtn">Click Me</button>
+    <p id="hoverText">Hover over me to change my color.</p>
+    <input type="text" id="liveInput" placeholder="Type something..." />
+    <p id="displayText"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>Part 2: Interactive Elements</h2>
+    
+    <!-- Dark/Light Mode -->
+    <button id="themeToggle">Toggle Dark/Light Mode</button>
+    
+    <!-- FAQ -->
+    <div class="faq">
+      <h3 class="faq-question">What is this page?</h3>
+      <p class="faq-answer">It’s a demo of event handling, interactivity, and form validation.</p>
+      
+      <h3 class="faq-question">How does it work?</h3>
+      <p class="faq-answer">With JavaScript controlling the DOM and responding to user actions!</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>Part 3: Form Validation</h2>
+    <form id="signupForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <small class="error" id="nameError"></small>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" required>
+      <small class="error" id="emailError"></small>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <small class="error" id="passwordError"></small>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" required>
+      <small class="error" id="confirmPasswordError"></small>
+
+      <button type="submit">Sign Up</button>
+      <p id="successMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+body.dark-mode section {
+    background-color: #2e2e50;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3 {
+    color: #007bff;
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3 {
+    color: #8c8cd9;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#alertBtn {
+    margin-right: 10px;
+}
+
+#hoverText {
+    transition: color 0.3s;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#liveInput {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#themeToggle {
+    margin-bottom: 20px;
+}
+
+.faq-question {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+body.dark-mode .faq-question {
+    border-bottom: 1px solid #444;
+}
+
+.faq-question:hover {
+    background-color: #f0f0f0;
+}
+
+body.dark-mode .faq-question:hover {
+    background-color: #3e3e60;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px 15px;
+    background-color: #fafafa;
+    border-left: 3px solid #007bff;
+}
+
+body.dark-mode .faq-answer {
+    background-color: #21213f;
+    border-left: 3px solid #8c8cd9;
+}
+
+#signupForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box; 
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.error {
+    color: #d9534f;
+    font-size: 0.9em;
+    margin-top: -10px;
+    display: none; 
+}
+
+#successMessage {
+    color: #5cb85c;
+    font-weight: bold;
+    text-align: center;
+    display: none; 
+}
+
+#signupForm button[type="submit"] {
+    background-color: #28a745;
+}
+
+#signupForm button[type="submit"]:hover {
+    background-color: #218838;
+}
